@@ -10,6 +10,8 @@ public static class Run
     {
         while (true)
         {
+            var x = InputHelper.InputDouble("Введите первое число: ");
+            
             OperationMenu.ShowMenu();
 
             var choice = InputHelper.InputInt("Ваш выбор: ");
@@ -26,7 +28,6 @@ public static class Run
                 continue;
             }
             
-            var x = InputHelper.InputDouble("Введите первое число: ");
             var y = InputHelper.InputDouble("Введите второе число: ");
 
             MathOperation.Execute(operations, x, y);
