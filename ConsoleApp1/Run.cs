@@ -29,7 +29,7 @@ public static class Run
             var x = InputHelper.InputDouble("Введите первое число: ");
             var y = InputHelper.InputDouble("Введите второе число: ");
 
-            OperationExecuter.Execute(operations, x, y);
+            MathOperation.Execute(operations, x, y);
 
             Console.WriteLine("Нажмите Enter для продолжения ...");
             Console.ReadKey();

@@ -1,5 +1,3 @@
-using ConsoleApp1.MathOperations;
-
 namespace ConsoleApp1.Operations;
 
 public static class OperationSelect
@@ -9,15 +7,15 @@ public static class OperationSelect
         switch (op)
         {
             case OperationType.Add:
-                return Add.Execute;
+                return MathOperation.Add;
             case OperationType.Subtract:
-                return Subtract.Execute;
+                return MathOperation.Subtract;
             case OperationType.Multiply:
-                return Multiply.Execute;
+                return MathOperation.Multiply;
             case OperationType.Divide:
-                return Divide.Execute;
+                return MathOperation.Divide;
             default:
-                return Add.Execute;
+                return MathOperation.Add;
         }
     }
 }

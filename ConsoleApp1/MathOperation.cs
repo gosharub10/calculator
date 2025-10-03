@@ -1,7 +1,17 @@
-namespace ConsoleApp1.Operations;
+using ConsoleApp1.Operations;
 
-public static class OperationExecuter
+namespace ConsoleApp1;
+
+public static class MathOperation
 {
+    public static double Add(double x, double y) => x + y;
+    
+    public static double Divide(double x, double y) => y == 0 ? throw new DivideByZeroException() : x / y;
+    
+    public static double Multiply(double x, double y) => x * y;
+    
+    public static double Subtract(double x, double y) => x - y;
+    
     public static void Execute(OperationType operationType, double x, double y)
     {
         try
